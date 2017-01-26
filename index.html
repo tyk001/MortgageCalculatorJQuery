@@ -1,7 +1,7 @@
 <html>
-
 <head>
 
+    <!--- CDN for JQuery 3.1.1 --->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
@@ -19,30 +19,54 @@
 
     <title>Mortgage Calculator</title>
 </head>
-
 <body>
-  <h1 id="name"><b>Mortgage Calculator</b></h1>
-  <br>
-
-
-    <label for="loanBal">Loan Balance:</label>
-    <input id="loanBal" class="form-control">
-
-    <label for="interestRate">Interest Rate (%):</label>
-    <input id="interestRate" class="form-control">
-
-    <label for="loanTerm">Loan Term (Years):</label>
-    <input id="loanTerm" class="form-control">
-
-    <label for="period">Period:</label>
-    <select id="period" name="select" class="form-control">
-    <option value="6">Monthly</option>
-    <option value="12">Bi-monthly</option>
-</select>
-
-<p>
-    <button id='submitButton' class="btn btn-primary">Calculate</button>
-
+    <p>
+    <h1 id="name"><b>Mortgage Calculator</b></h1>
+    <p>
+        <table class="table" style="width: 650px">
+            <tr>
+                <td>
+                    <label for="loanBal ">Loan Balance:</label>
+                </td>
+                <th>
+                    <input id="loanBal" class="form-control " type="number">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="interestRate ">Interest Rate (%):</label>
+                </td>
+                <td>
+                    <input id="interestRate" class="form-control " type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="loanTerm">Loan Term (Years):</label>
+                </td>
+                <td>
+                    <input id="loanTerm" class="form-control " type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="period">Period:</label>
+                </td>
+                <td>
+                  <select id="period" name="select " class="form-control ">
+                      <option value="6 ">Monthly</option>
+                      <option value="12 ">Bi-monthly</option>
+                  </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <button id='submitButton' class="btn btn-primary ">Calculate</button>
+                </td>
+            </tr>
+        </table>
+        <p>
 </body>
-
 </html>

@@ -4,10 +4,13 @@ $(document).ready(function() {
         var interestRateValue = $('#interestRate').val();
         var loanTermValue = $('#loanTerm').val();
         var periodValue = $('#period option:selected').val();
-        console.log(loanBalValue, interestRateValue, loanTermValue, periodValue);
+        if (loanBalValue == '' || interestRateValue == '' || loanTermValue == '') {
+            alert("Please Fill Out All of the Fields");
+        }
         calcAll(loanBalValue, interestRateValue, loanTermValue, periodValue);
     });
 });
+
 
 function calcAll(loanBalValue, interestRateValue, loanTermValue, periodValue) {
     // monthly interest rate
